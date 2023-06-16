@@ -1,28 +1,10 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import './globals.css';
-import { Inter } from 'next/font/google';
-import localFont from '@next/font/local'
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Teste QA',
 };
-
-const poppins = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Poppins-Regular.ttf',
-      weight: '400'
-    },
-    {
-      path: '../../public/fonts/Poppins-Bold.ttf',
-      weight: '700'
-    }
-  ],
-  variable: '--font-poppins'
-})
 
 export default function RootLayout({
   children,
