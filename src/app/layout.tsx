@@ -45,14 +45,14 @@ export default function RootLayout({
             />
           </div>
           <nav className="header-nav">
-            <span className="header-text">Nossa historia </span>
+            <span className="header-text">Nossa historia</span>
             <span className="header-text">Produtos</span>
             <span className="header-text">Contato</span>
             <span className="header-text">Blog</span>
           </nav>
         </div>
       </header>
-      <body className={`${poppins.variable} font-sans`}>
+      <body>
         {children}
       </body>
     </>
