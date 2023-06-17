@@ -8,11 +8,11 @@ export default function Home() {
         <Image src={'/planeta-esquerda.png'} alt={'planeta-esquerda'} width={190} height={190} />
       </div>
       <div>
+        <div className="form-header">
+          <Image src={'/logo-form.png'} alt={'logo-form'} width={110} height={45} />
+        </div>
         <div className="form-container">
           <form action="">
-            <div className="form-header">
-              <Image src={'/logo-form.png'} alt={'logo-form'} width={110} height={45} />
-            </div>
             <div className="form-body">
               <label htmlFor="nome">Nome:</label>
               <input type="text" id="nome" name="nome" />
@@ -38,12 +38,12 @@ export default function Home() {
               </select>
             </div>
             <p>
-              <a href="#">Ja tem uma conta?</a>
+              <a href="#">Ja possui uma conta?</a>
             </p>
-            <div className="form-footer">
-              <button type="submit">Cadastrar</button>
-            </div>
           </form>
+        </div>
+        <div className="form-footer">
+          <button type="submit">Cadastrar</button>
         </div>
       </div>
       <div className="planeta-direita">
