@@ -6,11 +6,7 @@ export const metadata = {
   title: 'Teste QA',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}) {
   return (
     <>
         <Head>
