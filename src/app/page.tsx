@@ -10,6 +10,7 @@ export default function Home() {
       <div>
         <div className="form-header">
           <Image src={'/logo-form.png'} alt={'logo-form'} width={110} height={45} />
+          <a href=''>X</a>
         </div>
         <div className="form-container">
           <form action="">
@@ -38,7 +39,7 @@ export default function Home() {
               </select>
             </div>
             <p>
-              <a href="#">Ja possui uma conta?</a>
+              <a href=''>Ja possui uma conta?</a>
             </p>
           </form>
         </div>
