@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Teste QA',
 };
 
-export default function RootLayout({children}) {
+export default function RootLayout({children: any}) {
   return (
     <>
         <Head>
