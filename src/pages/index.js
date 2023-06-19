@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+import styles from '../styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -12,8 +13,8 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <header>
-        <div className='header-container'>
-          <div className='header-logo'>
+        <div className={styles['header-container']}>
+          <div className={styles['header-logo']}>
             <Image
               src='/logo-header.png'
               alt='logo-header'
@@ -21,25 +22,25 @@ export default function Home() {
               height={30}
             />
           </div>
-          <nav className='header-nav'>
-            <span className='header-text'>Nossa historia</span>
-            <span className='header-text'>Produtos</span>
-            <span className='header-text'>Contato</span>
-            <span className='header-text'>Blog</span>
+          <nav className={styles['header-nav']}>
+            <span className={styles['header-text']}>Nossa historia</span>
+            <span className={styles['header-text']}>produtos</span>
+            <span className={styles['header-text']}>contato</span>
+            <span className={styles['header-text']}>blog</span>
           </nav>
         </div>
       </header>
-      <main className={`main-container ${inter.className}`}>
-        <div className='planeta-esquerda'>
+      <main className={`${styles['main-container']} ${inter.className}`}>
+        <div className={styles['planeta-esquerda']}>
           <Image
             src={'/planeta-esquerda.png'}
             alt={'planeta-esquerda'}
-            width={190}
-            height={190}
+            width={290}
+            height={290}
           />
         </div>
         <div>
-          <div className='form-header'>
+          <div className={styles['form-header']}>
             <Image
               src={'/logo-form.png'}
               alt={'logo-form'}
@@ -48,47 +49,47 @@ export default function Home() {
             />
             <a href='#'>X</a>
           </div>
-          <div className='form-container'>
+          <div className={styles['form-container']}>
             <form action=''>
-              <div className='form-body'>
+              <div className={styles['form-body']}>
                 <label htmlFor='nome'>Nome:</label>
                 <input type='text' id='nome' name='nome' />
-                <label htmlFor='email'>Email:</label>
+                <label htmlFor='email'>email:</label>
                 <input type='email' id='email' name='email' />
-                <div className='form-row'>
-                  <div className='form-column'>
+                <div className={styles['form-row']}>
+                  <div className={styles['form-column']}>
                     <label htmlFor='login'>Login:</label>
                     <input type='text' id='login' name='login' />
                   </div>
-                  <div className='form-column'>
-                    <label htmlFor='senha'>Senha:</label>
-                    <input type='password' id='senha' name='senha' />
+                  <div className={styles['form-column']}>
+                    <label htmlFor='senha'>Senha :</label>
+                    <input type='text' id='senha' name='senha' />
                   </div>
                 </div>
                 <label htmlFor='cpf'>CPF:</label>
                 <input type='text' id='cpf' name='cpf' />
-                <label htmlFor='genero'>Gênero:</label>
+                <label htmlFor='genero'>Genero:</label>
                 <select id='genero' name='genero'>
-                  <option value='masculino'>Masculino</option>
+                  <option value='masculino'>masculino</option>
                   <option value='feminino'>Feminino</option>
                   <option value='outro'>Outro</option>
                 </select>
               </div>
-              <p>
-                <a href=''>Já possui uma conta?</a>
+              <p className={styles['link-login']}>
+                <a href=''>Ja possui uma conta?</a>
               </p>
-              <div className='form-footer'>
+              <div className={styles['form-footer']}>
                 <button type='submit'>Cadastrar</button>
               </div>
             </form>
           </div>
         </div>
-        <div className='planeta-direita'>
+        <div className={styles['planeta-direita']}>
           <Image
             src={'/planeta-direita.png'}
             alt={'planeta-direita'}
-            width={190}
-            height={190}
+            width={690}
+            height={490}
           />
         </div>
       </main>
