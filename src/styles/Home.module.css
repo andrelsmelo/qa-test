@@ -21,7 +21,7 @@
   
   .header-text {
     margin-right: 10px;
-    color: #360877;
+    color: #7738cf;
     font-weight: 500;
   }
   
@@ -86,7 +86,7 @@
     border: 1px solid #ccc;
     border-radius: 50px;
     margin-bottom: 10px;
-    background-color: #d9d9d9;
+    background-color: #a8a7a7;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px, rgba(0, 0, 0, 0.15) 0px 2px 2px;
   }
   
@@ -100,7 +100,7 @@
   }
   
   .form-footer button {
-    background-color: #3cdff7;
+    background-color: #11cce9;
     color: #fff;
     border: none;
     padding: 10px 20px;
