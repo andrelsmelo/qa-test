@@ -10,7 +10,7 @@ export default function Home() {
       <div>
         <div className="form-header">
           <Image src={'/logo-form.png'} alt={'logo-form'} width={110} height={45} />
-          <a href=''>X</a>
+          <a href='#'>X</a>
         </div>
         <div className="form-container">
           <form action="">
